@@ -4,15 +4,17 @@ import Test.HUnit
 
 import Game.FrenchCards.Card
 
+import Control.Monad (void)
+
 
 main :: IO ()
-main = runTestTT tests >> return ()
+main = void $ runTestTT tests
 
 
 tests :: Test
 tests = TestList
   [ TestList $ map getNew values
-  , TestList $ [newGet r s | r <- values, s <- values]
+  , TestList [newGet r s | r <- values, s <- values]
   ]
 
 getNew :: Card -> Test

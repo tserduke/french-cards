@@ -1,0 +1,1 @@
+module Game.FrenchCards where

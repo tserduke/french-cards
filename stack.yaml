@@ -1,0 +1,2 @@
+resolver: lts-6.17
+system-ghc: false

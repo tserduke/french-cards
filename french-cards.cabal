@@ -1,0 +1,30 @@
+name:                 french-cards
+version:              0.2.0
+synopsis:             French Playing Cards
+description:          Please see README.md
+homepage:             https://github.com/tserduke/french-cards#readme
+bug-reports:          https://github.com/tserduke/french-cards/issues
+license:              BSD3
+license-file:         LICENSE
+author:               Taras Serduke
+maintainer:           taras.serduke@gmail.com
+copyright:            2016 Taras Serduke
+category:             Game
+stability:            experimental
+build-type:           Simple
+cabal-version:        >= 1.10
+extra-source-files:   README.md
+                      changelog.md
+
+source-repository head
+  type:     git
+  location: https://github.com/tserduke/french-cards
+
+
+library
+  hs-source-dirs:     src
+  exposed-modules:    Game.FrenchCards
+  build-depends:      base < 5
+  default-language:   Haskell2010
+  default-extensions:
+  ghc-options:        -Wall

@@ -4,6 +4,7 @@ module Game.FrenchCards.Card
   , newCard
   , cardRank
   , cardSuit
+  , cardWord
   ) where
 
 import Game.FrenchCards.Rank as Card
@@ -13,14 +14,28 @@ import Data.Word
 
 
 newtype Card = Card Word8
-  deriving (Bounded, Enum, Eq, Ord, Read, Show)
+  deriving (Enum, Eq, Ord, Read, Show)
+
+instance Bounded Card where
+  {-# INLINE minBound #-}
+  minBound = Card 0
+  {-# INLINE maxBound #-}
+  maxBound = Card 51
 
 
+{-# INLINE newCard #-}
 newCard :: Rank -> Suit -> Card
-newCard = undefined
+newCard r s = Card $ fromIntegral $ fromEnum r * 4 + fromEnum s
 
+
+{-# INLINE cardRank #-}
 cardRank :: Card -> Rank
-cardRank = undefined
+cardRank (Card x) = toEnum $ fromIntegral $ x `div` 4
 
+{-# INLINE cardSuit #-}
 cardSuit :: Card -> Suit
-cardSuit = undefined
+cardSuit (Card x) = toEnum $ fromIntegral $ x `mod` 4
+
+{-# INLINE cardWord #-}
+cardWord :: Card -> Word8
+cardWord (Card x) = x

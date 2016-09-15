@@ -18,7 +18,10 @@ newtype Card = Card Word8
 
 -- | Card indexes from 0 to 51
 instance Enum Card where
-  toEnum = Card . fromIntegral
+  {-# INLINE toEnum #-}
+  toEnum x | x >= 0 && x < 52 = Card $ fromIntegral x
+           | otherwise = error $ "Card toEnum " ++ show x
+  {-# INLINE fromEnum #-}
   fromEnum = fromIntegral . cardWord
 
 instance Bounded Card where

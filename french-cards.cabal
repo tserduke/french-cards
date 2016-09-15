@@ -42,3 +42,13 @@ test-suite card
                       HUnit
   default-language:   Haskell2010
   ghc-options:        -Wall
+
+test-suite misc
+  type:               exitcode-stdio-1.0
+  hs-source-dirs:     test
+  main-is:            Misc.hs
+  build-depends:      base < 5,
+                      french-cards,
+                      hspec
+  default-language:   Haskell2010
+  ghc-options:        -Wall

@@ -29,5 +29,16 @@ library
                       Game.FrenchCards.Suit
   build-depends:      base < 5
   default-language:   Haskell2010
-  default-extensions:
+  default-extensions: GeneralizedNewtypeDeriving
+  ghc-options:        -Wall
+
+
+test-suite card
+  type:               exitcode-stdio-1.0
+  hs-source-dirs:     test
+  main-is:            Card.hs
+  build-depends:      base < 5,
+                      french-cards,
+                      HUnit
+  default-language:   Haskell2010
   ghc-options:        -Wall

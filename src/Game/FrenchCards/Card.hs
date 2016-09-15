@@ -1,5 +1,6 @@
 module Game.FrenchCards.Card
   ( module Card
+  , Card (Card)
   , newCard
   , cardRank
   , cardSuit

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-hlint ./src ./test
+stack exec hlint -- ./src ./test

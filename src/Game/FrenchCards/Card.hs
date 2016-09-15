@@ -22,8 +22,8 @@ newtype Card = Card Word8
   deriving (Eq, Ord, Read, Show)
 
 -- | @
--- minBound == newCard R2 Clubs
--- maxBound == newCard Ace Spades
+-- 'minBound' == 'newCard' 'R2' 'Clubs'
+-- 'maxBound' == 'newCard' 'Ace' 'Spades'
 -- @
 instance Bounded Card where
   {-# INLINE minBound #-}

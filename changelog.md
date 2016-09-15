@@ -1,8 +1,8 @@
 # Change Log
 
-## 0.2.0 (2016-09-16)
-* Card, newCard, cardRank, cardSuit, cardWord
-* CardSet type, addCard, contains, suits
-* Pretty printing
-* Enum, Bounded
-*
+## 0.1.0 (2016-09-15)
+* Project setup
+* Card data type
+* newCard function
+* cardRank, cardSuit, cardWord functions
+* Rank and Suit data types

@@ -1,5 +1,6 @@
+-- | Card Suits
 module Game.FrenchCards.Suit where
 
 
-data Suit = C | D | H | P
+data Suit = Clubs | Diamonds | Hearts | Spades
   deriving (Bounded, Enum, Eq, Ord, Show, Read)

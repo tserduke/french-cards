@@ -1,3 +1,4 @@
+-- | Card Ranks
 module Game.FrenchCards.Rank where
 
 

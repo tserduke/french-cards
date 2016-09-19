@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.1 (2016-09-19)
+* Hackage badge in readme
+* Minor cabal package fixes
+
 ## 0.1.0 (2016-09-17)
 * Project setup
 * Card data type

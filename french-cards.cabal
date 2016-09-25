@@ -36,7 +36,7 @@ library
 test-suite card
     type:               exitcode-stdio-1.0
     hs-source-dirs:     test
-    main-is:            Card.hs
+    main-is:            CardTest.hs
     build-depends:      base < 5,
                         french-cards,
                         HUnit
@@ -46,7 +46,7 @@ test-suite card
 test-suite misc
     type:               exitcode-stdio-1.0
     hs-source-dirs:     test
-    main-is:            Misc.hs
+    main-is:            MiscTest.hs
     build-depends:      base < 5,
                         french-cards,
                         hspec

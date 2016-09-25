@@ -1,8 +1,6 @@
 -- | Card
 module Game.FrenchCards.Card
-    ( module Game.FrenchCards.Rank
-    , module Game.FrenchCards.Suit
-    , Card (Card)
+    (Card (Card)
     -- * Construction
     , newCard
     -- * Accessors

@@ -1,7 +1,7 @@
 # Change Log
 
 ## 0.2.0
-* CardSet
+* Cards
 * Nice Show instances
 
 ## 0.1.1 (2016-09-19)

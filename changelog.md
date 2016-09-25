@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.0
+* CardSet
+* Nice Show instances
+
 ## 0.1.1 (2016-09-19)
 * Hackage badge in readme
 * Minor cabal package fixes

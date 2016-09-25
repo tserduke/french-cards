@@ -24,6 +24,7 @@ library
     hs-source-dirs:     lib
     exposed-modules:    Game.FrenchCards
                         Game.FrenchCards.Card
+                        Game.FrenchCards.CardSet
                         Game.FrenchCards.Rank
                         Game.FrenchCards.Suit
     build-depends:      base < 5
